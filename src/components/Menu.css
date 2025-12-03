@@ -1,0 +1,66 @@
+.menu {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 32px;
+  padding: 3px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.menu:hover {
+  background-color: rgba(0, 0, 0, 10);
+}
+
+/* Search ni css i */
+
+.search-category {
+  padding: 0 0 0 6px;
+  background-color: white;
+  width: fit-content;
+  height: 31.25px;
+  display: flex;
+  gap: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  align-items: center;
+  cursor: pointer;
+}
+.search-category-name {
+  color: black;
+}
+.search-category-arrow {
+  width: fit-content;
+  height: fit-content;
+}
+.search-form {
+  display: flex;
+}
+.search-input {
+  border: none;
+  height: 31.25px;
+  outline: none !important;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 606px;
+  padding-left: 5px;
+  padding-block: 5px;
+}
+.search-input-wrapper {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  position: relative;
+  border-left: 1px grey solid;
+}
+.search-icon-wrapper {
+  width: fit-content;
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 4px;
+  right: -10px;
+  cursor: pointer;
+}
+.search-icon {
+  fill: grey;
+}

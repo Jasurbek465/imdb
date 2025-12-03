@@ -1,0 +1,221 @@
+/* Modellar css qismi */
+.models {
+  margin-block: 150px;
+}
+.models-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.model-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.model-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.model-image-wrapper,
+.model-image {
+  cursor: pointer;
+  border-radius: 100px;
+}
+.model-image-wrapper {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.model-image-wrapper > .model-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* rasmni to‘ldiradi */
+  object-position: center;
+}
+.models-title {
+  display: flex;
+  max-height: 2.4em;
+  overflow: hidden;
+  border: none;
+  padding-left: 0.75rem;
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.model-rating-change {
+  display: flex;
+  align-items: center;
+}
+.model-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.models-arrow {
+  width: 17.59px;
+  height: 17.59px;
+}
+/* Modellar css qismi */
+
+/* qo'shimcha kinolar css qismi */
+
+.movies-header .movies-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.00735em;
+  text-transform: none;
+  -webkit-font-smoothing: auto;
+  color: #f5c518;
+}
+.movies-header {
+  margin-bottom: 40px;
+}
+.movie-card {
+  width: fit-content;
+  background: rgb(26, 26, 26);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 20px;
+}
+.movie-image-wrapper {
+  width: fit-content;
+  position: relative;
+}
+.movie-image {
+  border-top-right-radius: 20px;
+}
+.movie-overlay {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  cursor: pointer;
+}
+.pilusni-tagidagi {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pilusni-tagidagi > svg {
+  opacity: 0.5;
+  fill: rgb(255, 255, 255);
+}
+.movie-rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.rating-info {
+  display: flex;
+  gap: 4px;
+}
+.movies-rating-star,
+.movie-rating-icon {
+  width: 12.79px;
+  height: 12.79px;
+}
+.movies-rating-star > svg,
+.movie-rating-icon > svg {
+  width: 100%;
+  height: 100%;
+}
+.movie-rating-icon {
+  margin-right: 90px;
+}
+.movie-trailer-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  margin-inline: auto;
+  padding: 3px 16px;
+  width: 100px;
+  border-radius: 50px;
+  transition: all 0.2s linear;
+}
+.movie-trailer-link:hover {
+  background-color: rgb(118, 118, 118);
+}
+.movie-info {
+  margin-top: 10px;
+  padding-inline: 10px;
+  padding-bottom: 10px;
+}
+.movie-name {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.watch-animation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.watch-now-link {
+  color: #5799ef;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 8%);
+}
+.img-watch-link {
+  height: 22px;
+}
+.movie-trailer-link {
+}
+/* qo'shimcha kinolar css qismi */
+
+/* Modal css */
+/* Butun ekran modal */
+.modal-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* to‘liq kenglik */
+  height: 100vh; /* to‘liq balandlik */
+  background: rgba(0, 0, 0, 0.8); /* qora yarim shaffof fon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Ichki kontent */
+.modal-content {
+  position: relative;
+  background: rgb(32, 32, 32);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%; /* kichik ekranlarda ham sig‘sin */
+  height: 650px;
+  /* text-align: center; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.close-btn{
+  color: white;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  /* text-align: end; */
+}
+.info-malumot{
+  color: white;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 600;
+}
+
+/* Modal css */
