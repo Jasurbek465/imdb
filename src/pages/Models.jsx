@@ -7,6 +7,7 @@ export const Models = () => {
     <div className="container models">
       {/* Header */}
       <div className="models-header">
+        <div className=''></div>
         <h1 className="models-title">Most popular celebrities</h1>
         <img
           src={assets.arrowRigh}
@@ -31,12 +32,13 @@ export const Models = () => {
           <p className="model-rating">
             14{' '}
             <span className="model-rating-change">
+              {'('}
               <img
                 src={assets.reytingTopArr}
                 alt="strelkacha"
                 className="model-rating-icon"
               />
-              9.120
+              {'9.120)'}
             </span>
           </p>
 

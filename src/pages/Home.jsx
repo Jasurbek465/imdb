@@ -9,8 +9,13 @@ export const Home = () => {
 
   return (
     <div>
+      {/* Animation */}
       <Animation />
+      
+      {/* MOdels */}
       <Models />
+
+      {/* Movies */}
       <Movies />
     </div>
   );

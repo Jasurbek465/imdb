@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import assets from '../assets';
+import React, { useEffect, useState } from 'react';
 import { getALLTopMovies } from '../api';
 
 export const Movies = () => {

@@ -8,12 +8,14 @@
   background-color: #121212;
   padding: 4px 0;
 }
-.logo-img {
+.container-logo-img {
   margin-right: 8px;
+}
+.logo-img {
   height: fit-content;
 }
-.header-box{
-    display: flex;
-    margin-inline: auto;
-    /* justify-content: space-between; */
-} 
+.header-box {
+  display: flex;
+  margin-inline: auto;
+  /* justify-content: space-between; */
+}
