@@ -1,20 +1,13 @@
 import React from 'react';
 import assets from '../assets';
 import './model.css';
+import { Malumotlar } from '../components/Malumotlar';
 
 export const Models = () => {
   return (
     <div className="container models">
       {/* Header */}
-      <div className="models-header">
-        <div className=''></div>
-        <h1 className="models-title">Most popular celebrities</h1>
-        <img
-          src={assets.arrowRigh}
-          alt="arrow right"
-          className="models-arrow"
-        />
-      </div>
+      <Malumotlar malumot={"Top Models"} />
 
       {/* Model item */}
       <div className="model-cards">

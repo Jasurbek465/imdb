@@ -1,9 +1,8 @@
 import { Malumotlar } from './Malumotlar';
 
-export const Actors = () => {
+export const Actors = ({ actor }) => {
   return (
     <div className="actors">
-      
       <Malumotlar malumot={'Top Cast'} />
 
       <div className="actor-big-box">
@@ -11,7 +10,10 @@ export const Actors = () => {
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -19,14 +21,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>{actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -34,14 +39,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -49,14 +57,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -64,14 +75,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -79,85 +93,8 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
-            </div>
-          </div>
-        </div>
-        <div className="info-box-actor">
-          <div className="actor-item">
-            <div className="actor-img">
-              <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
-                alt=""
-                width={96}
-                height={96}
-              />
-            </div>
-
-            <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
-            </div>
-          </div>
-          <div className="actor-item">
-            <div className="actor-img">
-              <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
-                alt=""
-                width={96}
-                height={96}
-              />
-            </div>
-
-            <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
-            </div>
-          </div>
-          <div className="actor-item">
-            <div className="actor-img">
-              <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
-                alt=""
-                width={96}
-                height={96}
-              />
-            </div>
-
-            <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
-            </div>
-          </div>
-          <div className="actor-item">
-            <div className="actor-img">
-              <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
-                alt=""
-                width={96}
-                height={96}
-              />
-            </div>
-
-            <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
-            </div>
-          </div>
-          <div className="actor-item">
-            <div className="actor-img">
-              <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
-                alt=""
-                width={96}
-                height={96}
-              />
-            </div>
-
-            <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
         </div>
@@ -165,7 +102,10 @@ export const Actors = () => {
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -173,14 +113,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -188,14 +131,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -203,14 +149,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -218,14 +167,17 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
           <div className="actor-item">
             <div className="actor-img">
               <img
-                src="https://static.stacker.com/s3fs-public/styles/slide_desktop/s3/02LD0JTY.png"
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
                 alt=""
                 width={96}
                 height={96}
@@ -233,8 +185,100 @@ export const Actors = () => {
             </div>
 
             <div className="actor-info">
-              <h2>Robert Downey Jr.</h2>
-              <p>as Tony Stark / Iron Man</p>
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
+            </div>
+          </div>
+        </div>
+        <div className="info-box-actor">
+          <div className="actor-item">
+            <div className="actor-img">
+              <img
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
+                alt=""
+                width={96}
+                height={96}
+              />
+            </div>
+
+            <div className="actor-info">
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
+            </div>
+          </div>
+          <div className="actor-item">
+            <div className="actor-img">
+              <img
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
+                alt=""
+                width={96}
+                height={96}
+              />
+            </div>
+
+            <div className="actor-info">
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
+            </div>
+          </div>
+          <div className="actor-item">
+            <div className="actor-img">
+              <img
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
+                alt=""
+                width={96}
+                height={96}
+              />
+            </div>
+
+            <div className="actor-info">
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
+            </div>
+          </div>
+          <div className="actor-item">
+            <div className="actor-img">
+              <img
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
+                alt=""
+                width={96}
+                height={96}
+              />
+            </div>
+
+            <div className="actor-info">
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
+            </div>
+          </div>
+          <div className="actor-item">
+            <div className="actor-img">
+              <img
+                src={
+                  actor.primaryImage ||
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqhmiOmD6_cV5LZKYXen_OjjxPmhWQo9SSA&s'
+                }
+                alt=""
+                width={96}
+                height={96}
+              />
+            </div>
+
+            <div className="actor-info">
+              <h2>{actor.fullName}</h2>
+              <p>as {actor.characters}</p>
             </div>
           </div>
         </div>

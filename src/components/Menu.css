@@ -72,6 +72,11 @@
   margin-inline: auto;
   margin-bottom: 40px;
 }
+.actor-info{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
 .actors-header {
   display: flex;
   align-items: center;
@@ -79,7 +84,6 @@
   width: fit-content;
   gap: 10px;
   transition: all 0.3s linear;
-  margin-bottom: 40px;
 }
 .actors-header:hover .arrow > svg {
   fill: #f5c518;

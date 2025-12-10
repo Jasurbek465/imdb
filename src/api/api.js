@@ -8,7 +8,7 @@ export const API = axios.create({
   withCredentials: true,
 });
 
-API.interceptors.response.use((config) => {
+API.interceptors.request.use((config) => {
   config.headers = {
     'x-rapidapi-key': API_KEY,
     'x-rapidapi-host': 'imdb236.p.rapidapi.com',

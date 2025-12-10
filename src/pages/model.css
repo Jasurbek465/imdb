@@ -43,7 +43,6 @@
   position: relative;
   font-weight: bold;
   font-size: 26px;
-  
 }
 .model-rating-change {
   display: flex;
@@ -75,6 +74,15 @@
 .movies-header {
   margin-bottom: 40px;
 }
+.movies-list {
+  display: grid;
+
+  /* Har bir qatorda 4 ta kartochka bo'lishi uchun */
+  grid-template-columns: repeat(6, 1fr);
+
+  /* Kartochkalar orasidagi bo'shliq */
+  gap: 20px;
+}
 .movie-card {
   width: fit-content;
   background: rgb(26, 26, 26);
@@ -85,6 +93,10 @@
 .movie-image-wrapper {
   width: fit-content;
   position: relative;
+  height: 260px;
+}
+.movie-image-wrapper>img{
+  height: 100%;
 }
 .movie-image {
   border-top-right-radius: 20px;
@@ -145,6 +157,10 @@
   margin-top: 10px;
   padding-inline: 10px;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 .movie-name {
   color: inherit;
@@ -202,17 +218,17 @@
   /* text-align: center; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.close-btn{
+.close-btn {
   color: black;
   position: absolute;
   top: 40px;
   right: 40px;
-  background: rgb(245,197,24);
+  background: rgb(245, 197, 24);
   border-radius: 50px;
   padding: 7px 8px;
   /* text-align: end; */
 }
-.info-malumot{
+.info-malumot {
   color: white;
   margin-top: 30px;
   font-family: sans-serif;
